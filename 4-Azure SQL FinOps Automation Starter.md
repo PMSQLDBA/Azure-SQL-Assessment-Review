@@ -1,12 +1,12 @@
 # Azure SQL FinOps Automation Starter
 
-[Azure-SQL-FinOps-Starter.zip](https://github.com/PMSQLDBA/Azure-SQL-Assessment-Review/blob/main/azure-sql-finops-starter.zip)
-
 <img width="718" height="266" alt="Finops" src="https://github.com/user-attachments/assets/beffe98a-ae31-45ff-9098-7b0f9d86f707" />
 
 Created a reusable **Azure SQL FinOps Automation Starter Kit** that you can use as the base for customer assessments.
 
 [Download the Azure SQL FinOps Starter Kit](sandbox:/mnt/data/azure-sql-finops-starter.zip)
+
+[Azure-SQL-FinOps-Starter.zip](https://github.com/PMSQLDBA/Azure-SQL-Assessment-Review/blob/main/azure-sql-finops-starter.zip)
 
 It includes:
 
