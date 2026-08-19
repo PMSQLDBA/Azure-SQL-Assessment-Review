@@ -51,3 +51,18 @@ After this engine is working, the final layer becomes the **customer dashboard +
 
 [1]: https://learn.microsoft.com/en-us/azure/azure-sql/database/database-advisor-implement-performance-recommendations?view=azuresql&utm_source=chatgpt.com "Database advisor performance recommendations - Azure SQL Database | Microsoft Learn"
 [2]: https://github.com/MicrosoftDocs/azure-monitor-docs/blob/main/articles/azure-monitor/fundamentals/cost-usage.md?utm_source=chatgpt.com "azure-monitor-docs/articles/azure-monitor/fundamentals/cost-usage.md at main · MicrosoftDocs/azure-monitor-docs · GitHub"
+
+
+
+Next implementation milestone is **Assessment Engine v1**:
+
+**Azure SQL inventory → 30-day metrics → actual cost → Advisor → optimization rules → savings calculation → recommendation database.**
+
+That approach lines up well with Microsoft's guidance: Azure SQL Monitor metrics can be used for right-sizing, Cost Management supports scheduled cost exports, and Azure Advisor analyzes resource configuration/usage for optimization opportunities. ([Microsoft Learn][1])
+
+One thing we'll watch carefully is the monitoring solution's own cost. Standard Azure platform metrics are free to collect, but REST metric retrieval and Log Analytics ingestion can introduce costs, so we'll design the collector efficiently. ([Microsoft Learn][2])
+
+After v1, we can add the **Power BI executive dashboard, approval workflow, automated remediation, rollback, and realized-savings tracking**.
+
+[1]: https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-metrics-alerts?view=azuresql&utm_source=chatgpt.com "Monitoring Azure SQL Database with metrics and alerts - Azure SQL Database | Microsoft Learn"
+[2]: https://learn.microsoft.com/en-us/azure/azure-monitor/usage-estimated-costs?utm_source=chatgpt.com "Azure Monitor cost and usage - Azure Monitor | Microsoft Learn"
