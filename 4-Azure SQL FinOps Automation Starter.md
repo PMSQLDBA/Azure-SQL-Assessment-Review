@@ -2,6 +2,8 @@
 
 This starter kit is a reference implementation for automating Azure SQL cost assessment and savings tracking.
 
+[Azure-SQL-FinOps-Starter.zip](https://github.com/PMSQLDBA/Azure-SQL-Assessment-Review/blob/main/azure-sql-finops-starter.zip)
+
 ## What it does
 
 1. Discovers Azure SQL databases across subscriptions using Azure Resource Graph.
