@@ -66,6 +66,8 @@ The next logical step is to turn this starter into a **deployable Azure solution
 [3]: https://learn.microsoft.com/en-us/rest/api/advisor/recommendations "Recommendations - REST API (Azure Advisor)"
 
 ========================================================================================================================================================================
+
+
 This starter kit is a reference implementation for automating Azure SQL cost assessment and savings tracking.
 
 ## What it does
