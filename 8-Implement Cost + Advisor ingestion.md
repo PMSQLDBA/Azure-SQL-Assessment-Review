@@ -180,9 +180,13 @@ The next layer becomes:
 
 **Power BI Executive Dashboard → DBA Dashboard → Recommendation Detail → Owner Approval → Implementation → Realized Savings.**
 
-I would specifically make the executive dashboard show **Current Spend, Identified Savings, Approved Savings, Implemented Savings and Realized Savings**. Cost Management itself is built around analysis, monitoring, optimization, alerts and exported cost data, so this model fits naturally with Azure's FinOps capabilities. ([Microsoft Learn][1])
+Specifically make the executive dashboard show **Current Spend, Identified Savings, Approved Savings, Implemented Savings and Realized Savings**. 
 
-**So our immediate coding milestone is now: `Cost Management Export Reader + Azure Advisor Collector + ResourceId Join`.** Once that works, we have all the data needed for the first complete Azure SQL cost assessment engine.
+Cost Management itself is built around analysis, monitoring, optimization, alerts and exported cost data, so this model fits naturally with Azure's FinOps capabilities. ([Microsoft Learn][1])
+
+**So our immediate coding milestone is now: `Cost Management Export Reader + Azure Advisor Collector + ResourceId Join`.** 
+
+Once that works, we have all the data needed for the first complete Azure SQL cost assessment engine.
 
 [1]: https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management "Overview of Cost Management - Microsoft Cost Management | Microsoft Learn"
 [2]: https://learn.microsoft.com/en-us/rest/api/advisor/recommendations/list "Recommendations - List - REST API (Azure Advisor) | Microsoft Learn"
