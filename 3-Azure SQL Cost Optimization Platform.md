@@ -1,4 +1,4 @@
-I would build this as a small **Azure SQL Cost Optimization Platform** rather than a one-time assessment. 
+Lets build this as a small **Azure SQL Cost Optimization Platform** rather than a one-time assessment. 
 
 The goal is to automatically discover Azure SQL resources, collect utilization and billing, generate savings recommendations, track approvals, and then measure whether the customer actually saved money.
 
@@ -124,7 +124,7 @@ Resources
 
 Microsoft publishes Azure SQL-specific Resource Graph examples, so ARG is a good fit for the inventory layer. ([Microsoft Learn][1])
 
-Your inventory table could contain:
+Our inventory table could contain:
 
 ```text
 Subscription
@@ -199,7 +199,7 @@ Example data:
 
 This is where your IP/value sits.
 
-I would implement recommendations using rule IDs.
+We would implement recommendations using rule IDs.
 
 For example:
 
@@ -259,7 +259,7 @@ The distinction matters.
 
 # 6. Add safety headroom
 
-I would use three classifications.
+We would use 3 classifications.
 
 ### Strong candidate
 
@@ -303,7 +303,7 @@ LOW
 
 These percentages should be treated as **your policy thresholds**, not Microsoft guarantees.
 
-For critical systems, I would make them more conservative.
+For critical systems, we would make them more conservative.
 
 ---
 
@@ -365,9 +365,10 @@ Short daytime workload
 Large idle windows
 ```
 
-Azure SQL Database serverless supports automatic compute scaling and, depending on configuration/workload, auto-pause behavior, so intermittent workloads can be good candidates. ([Microsoft Learn][4])
+Azure SQL Database serverless supports automatic compute scaling and, depending on configuration/workload, auto-pause behavior, so intermittent workloads can be good candidates. 
+([Microsoft Learn][4])
 
-Your recommendation could be:
+Our recommendation could be:
 
 ```text
 Database:
@@ -491,7 +492,7 @@ Flag them as:
 Reservation Candidate
 ```
 
-Azure Advisor can already provide cost-related recommendations, so rather than replace it, I would ingest Advisor findings into the same recommendation store and combine them with your SQL-specific logic.
+Azure Advisor can already provide cost-related recommendations, so rather than replace it, We would ingest Advisor findings into the same recommendation store and combine them with your SQL-specific logic.
 
 Advisor recommendations are available programmatically through Microsoft's recommendations API. ([Microsoft Learn][5])
 
@@ -944,7 +945,7 @@ Now the customer can actually prove ROI.
 
 # 24. Production safety
 
-For production, I'd recommend:
+For production, we would recommend:
 
 ```text
 Detection
@@ -1020,13 +1021,13 @@ Alert owner
 Recommend rollback
 ```
 
-I would still keep automatic rollback optional depending on the customer's change-control policy.
+We would still keep automatic rollback optional depending on the customer's change-control policy.
 
 ---
 
 # 26. Suggested implementation phases
 
-I wouldn't build everything at once.
+We wouldn't build everything at once.
 
 ### Phase 1 — Discovery
 
